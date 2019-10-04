@@ -1,7 +1,7 @@
 <p>series-list works!</p>
 
 <ul>
-  <li *ngFor="let s of series">
+  <li *ngFor="let s of series | async">
 
     {{ s.name }}
 
