@@ -37,15 +37,19 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { TestComponent } from './test/test.component';
 import { AboutComponent } from './about/about.component';
+import { SeriesListComponent } from './series-list/series-list.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    AboutComponent
+    AboutComponent,
+    SeriesListComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
