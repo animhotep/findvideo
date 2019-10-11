@@ -15,8 +15,13 @@ export class SeriesListComponent implements OnInit {
 
   series: Observable<Serie[]>;
 
+ // series;
+
   ngOnInit() {
     this.series = this.service.getUsers();
+/*    this.service.getUsers().then(series => {
+      this.series = series;
+    });*/
   }
 
 }
